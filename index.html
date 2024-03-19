@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>David's Salon</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/x-icon" href="images/favicon.png">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  </head>
+    <body style="font-family: poppins;">
+        <div class="nav-container">
+            <div class="side-nav-container">
+                <div id="mySidenav" class="sidenav">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    <a href="index.html">home</a>
+                    <a href="about.html">about</a>
+                    <a href="services.html">services</a>
+                    <a href="contact.html">contact</a> 
+                    <a href="book-now.html">book now</a>
+                    <a href="#">login</a>
+                </div>
+                <span class="burger-nav" onclick="openNav()">&#9776;</span>
+                
+                <script>
+                function openNav() {
+                    document.getElementById("mySidenav").style.width = "100%";
+                }
+                
+                function closeNav() {
+                    document.getElementById("mySidenav").style.width = "0";
+                }
+                </script>
+            </div>
+
+        <div class="logo"><a href="about.html"><img src="images/davidsalon-logo.png" alt="logo"></a></div>
+            <nav>
+                <div class="nav-menu-container">
+                    <ul class="menu-list" style="padding-top: 15px; margin-left: 20px;">
+                        <li class="nav-btn active"><a href="index.html">home</a></li>
+                        <li class="nav-btn"><a href="about.html">about</a></li>
+                        <li class="nav-btn"><a href="services.html">services</a></li>
+                        <li class="nav-btn"><a href="contact.html">contact</a></li>
+                        <li class="nav-btn"><a href="book-now.html">book now</a></li>
+                        <li class="nav-btn"><a href="admin/login.php">admin</a></li>                   
+                    </ul>
+                </div>
+            </nav>
+            
+        </div>
+        <br><br><br>
+        <div class="container">
+        <div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-label="Slide 1" aria-current="true"></button>
+              <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2" class=""></button>
+              <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3" class=""></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item carousel-item-next carousel-item-start">
+                <img src="images/carousel_1.jpg" alt="" width="100%" height="100%">
+                <div class="container">
+                  <div class="carousel-caption text-start d-none d-md-block">
+                    <h2>Whoever you are, whatever you do, <br/>
+                      We bring out the best in you.</h2>
+                    
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="images/carousel_2.jpg" alt="" width="100%" height="100%">                
+                <div class="container">
+                  <div class="carousel-caption text-start d-none d-md-block">
+                    <h1>Discover Top Salon Services</h1>
+                    <p>Unlock Stunning Hair Transformations: Find Your Perfect Hair Salon Today</p>
+                    <p><a class="btn btn-lg btn-outline-light" href="about.html">Learn more</a></p>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item active carousel-item-start">
+                <img src="images/carousel_3.jpg" alt="" width="100%" height="100%">
+                <div class="container">
+                  <div class="carousel-caption text-end d-none d-md-block">
+                    <h1> Book online now! </h1>
+                    <p class="opacity-75">Instantly book your appointment online!</p>
+                    <p><a class="btn btn-lg btn-outline-light" href="book-now.html">Book Now</a></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+
+        <div class="container col-xxl-8 px-4 py-5">
+          <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+            <div class="col-10 col-sm-8 col-lg-6">
+              <img src="images/priviledge.jpg" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+            </div>
+            <div class="col-lg-6">
+              <h2 class="text-body-emphasis lh-1 mb-3">Priviledge Card</h2>
+              <p style="text-align: justify;">Get the one card that brings out the best in you – the David’s Salon Privilege Card! Cardholders get an amazing 15% discount on all hair services in all David’s Salon branches every day, any day of the year, for two years! <br/>
+                To get a DPC, fill up an application form at any David’s Salon branch and pay a fee of P200. Immediately, you can get your favorite hair services, like haircuts, hair color, rebonding, perming, keratin, and hair treatments with a discount! <br/>
+                With the DPC, you are sure to get world-class services, at a great price.</p>
+            </div>
+          </div>
+        </div>
+
+      <div class="footer-container">
+          <div class="footer-container-items">
+              <div class="footer-block1">
+                  <img class="footer-logo" src="images/white-logo.png" alt="logo">
+                  <div class="footer-address">
+                      David’s Salon offers world-class hairdressing, fueled by 
+                      Filipino passion. With the vision of bringing Fine European 
+                      hairdressing to the Philippines, CEO David Charlton and the David’s
+                       Salon’s brand has made a name for itself, offering a wide 
+                       range of hair and beauty services to a wide range of customers. <a href="about.html">More...</a>
+                  </div>
+              </div>
+              <div class="footer-block2">
+                  <div class="footer-services">
+                      <h4 style="color: #ffffff;
+                                  font-size: 20px;
+                                  font-weight: 500;
+                                  text-align: left;
+                                  line-height: 1.1;
+                                  letter-spacing: 0.15em;
+                                  margin-left:12px;
+                                  margin-bottom: 12px;
+                                  margin-top: 8px;">SERVICES </h4>
+                      <a href="services.html">cutting</a>
+                      <a href="services.html">hair color</a>
+                      <a href="services.html">make-up</a>
+                      <a href="services.html">treatments</a>
+                  </div>
+              </div>
+              <div class="footer-block3">
+                  <h4 style="color: #ffffff;
+                                  font-size: 20px;
+                                  font-weight: 500;
+                                  text-align: left;
+                                  line-height: 1.1;
+                                  letter-spacing: 0.15em;
+                                  margin-left:12px;
+                                  margin-bottom: 12px;
+                                  margin-top: 8px;">GET IN TOUCH
+                  </h4> 
+                                  <div class="location-icon">
+                                      <i class="footer-icon fa-solid fa-location-dot"></i><span>2nd Floor Pavillion Mall, San Antonio, Biñan, Laguna</span>
+                                  </div>
+                                  <div class="footer-contact-icon">
+                                      <i class="footer-icon fa-solid fa-phone"></i><span>+63 9452393736</span>
+                                  </div>
+                                  <div class="email-icon">
+                                      <a style="color: rgba(255,255,255,0.75);" class="contact-email" href="mailto:davidsalonbinan@gmail.com"><i class="footer-icon fa-solid fa-envelope"></i><span>davidsalonbinan@gmail.com</a></span>
+                                  </div>
+                                  <div class="social-media-footer">
+                                      <a href="https://www.facebook.com/DavidsBinan"><i class="social-icon fa-brands fa-square-facebook"></i></a>
+                                      <a href="https://www.instagram.com/davidsalonph/"><i class="social-icon fa-brands fa-instagram"></i></a>
+                                      <a href="https://x.com/DavidSalonPH?t=p2mLuG6A0n4kRd9SeuMPFQ&s=07"><i class="social-icon fa-brands fa-x-twitter"></i></a>
+                                  </div>
+              </div>
+          </div>        
+      </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/b4d2f5be37.js" crossorigin="anonymous"></script>
+      </body>
+</html>

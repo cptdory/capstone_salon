@@ -1,0 +1,413 @@
+body {
+    font-family: "Poppins";
+    margin: 0px;
+    background-color: rgba(226,226,226,0.16);
+}
+
+.nav-container {
+    width: 100%;
+    display: flex;
+    position: fixed;
+    background-color: white;
+    margin: 0px;
+    z-index: 1000;
+}
+.logo img {
+    width: 200px;
+    display: inline;
+    float: left;
+    margin-left: 150px;
+}
+.menu-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.nav-btn {
+    display: flex;
+    font-size: 12px;
+    min-width: 100px;
+    justify-content: center;
+    transition: 0.5s;
+}
+.nav-btn:hover {
+    background-color: #f1f1f1;
+    transition: .3s;
+}
+.active {
+    border-bottom: 2px solid#150951;
+}
+.nav-btn a {
+    display: flex;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #150951;
+    padding: 12px;
+    font-family: "poppins";
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/*full width side nav*/
+.side-nav-container {
+    display: none;
+}
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: whitesmoke;
+    overflow-x: hidden;
+    transition: 0.5s;
+    text-align:center;
+  }
+  
+  .sidenav a {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-decoration: none;
+    font-size: 1rem;
+    color: #818181;
+    transition: 0.3s;
+    text-transform: uppercase;
+  
+  }
+  
+  .sidenav a:hover{
+    color: #150951;
+  }
+  
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  .burger-nav {
+    cursor:pointer;
+    font-size: 30px;
+    margin-top: 20px;
+  }
+/*about*/
+h3 {
+    font-size: 24px;
+}
+.about-heading {
+    align-self: center;
+    text-align: center;
+    line-height: 1.2;
+    font-family: 'Poppins';
+    padding-bottom: 50px;
+    color: #404040;
+}
+
+.about-container {
+    padding-top: 100px;
+    padding-right: 8rem;
+    padding-bottom: 75px;
+    padding-left: 8rem;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+}
+.about-text-block {
+    font-size: 16px;
+    font-weight: 400;
+    color: #404040;
+    line-height: 1.6;
+    text-align: justify;
+}
+.about-founder {
+    display: flex;
+    flex-direction: row;
+    flex: 1 1 4rem;
+    gap: 40px;
+}
+.about-founder-heading {
+    color: #150951;
+    margin-bottom: 18px;
+} 
+.founder-img-container img{
+    width: 400px;
+    flex-wrap: wrap;
+}
+.about-team{
+    margin-top: 2rem;
+    margin-left: 0;
+}
+.team-card-container{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.team-card {
+    width: 20%;
+    padding-top: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.team-card img{
+    width: 100%;
+    height: auto;
+}
+.team-card h3 {
+    margin-top: 10px;
+    font-size: 1rem ;
+    line-height: 15px;
+}
+/*services*/
+.services-container {
+    padding-top: 100px;
+    padding-right: 1rem;
+    padding-bottom: 75px;
+    padding-left: 1rem;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    color: #404040;
+}
+.services-heading {
+    align-self: center;
+    text-align: center;
+    line-height: 1.2;
+    padding-bottom: 50px;
+}
+.services-list-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-bottom: 50px;
+}
+.services-list {
+    text-align: center;
+    font-size: 18px;
+}
+.services-bottom-text {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+/*Contact*/
+.contact-page-container {
+    padding-top: 100px;
+    padding-bottom: 75px;
+    padding-left: 20px;
+    margin-left: 8rem;
+    margin-right: 4rem;
+    display: flex;
+    flex-direction: column;
+}
+.contact-first-block {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 2rem;
+}
+.contact-heading{
+    color: #404040;
+    line-height: 1.2;
+}
+.contact-icon {
+    color: #150951;
+    font-size: 20px;
+    margin-right: 20px;
+}
+.contact-email {
+    text-decoration: none;
+    color: black;
+}
+.contact-email:hover{
+    color: #150951;
+    text-decoration: underline;
+}
+.contact-second-block {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 2rem;
+}
+.contact-second-block-content {
+    margin-left: 2rem;
+}
+.second-block-content-h4 {
+    margin-top: 20px;
+    font-size: 17px;
+}
+
+/*FOOTER*/
+.footer-container {
+    background-color: rgba(21,9,81,0.7);
+    width: auto;
+    background-size: cover;
+    background-repeat: repeat;
+    display: flex;
+    place-content: flex-start;
+    font-family: "Poppins";
+}
+.footer-container-items {
+    padding-top: 100px;
+    padding-right: 4rem;
+    padding-bottom: 75px;
+    padding-left: 4rem;
+    display: flex;
+    justify-content: space-around;
+}
+.footer-block1 {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1;
+    text-align: justify;
+    
+}
+.footer-logo{
+    width: 200px;
+}
+.footer-address {
+    color: rgba(255,255,255,0.75);
+    font-size: 16px;
+    margin-top: 12px;
+    margin-bottom: 24px;
+    line-height: 1.6;
+    font-weight: 300;
+}
+.footer-address a {
+    text-decoration: none;
+    color: rgba(255,255,255,0.75);
+}
+.footer-address a:hover {
+    color: white;
+}
+
+.footer-block2 {
+    display: flex;
+    justify-content: flex-start;
+    flex: 1 1;
+    padding-left: 4rem;
+}
+.footer-services {
+    display: flex;
+    flex-direction: column;
+    padding-left: 1rem;
+}
+.footer-services a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.75);
+    padding-top: 20px;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    font-size: 16px;
+}
+.footer-block3 {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    flex: 1 1;
+    color: rgba(255,255,255,0.75);
+    gap: 20px;
+}
+.footer-icon {
+    color: #ffffff; 
+    font-size: 20px; 
+    padding-right: 10px;
+}
+.social-icon {
+    color: #ffffff; 
+    font-size: 40px; 
+    padding-right: 20px;
+    padding-top: 20px;
+}
+
+
+@media (max-width:990px){
+    .nav-container {
+        justify-content: space-evenly;
+        flex-direction: row;
+    }
+    .nav-menu-container {
+        display: none;
+    }
+    .side-nav-container {
+        display: flex;
+    }
+    .logo img{
+        margin-left: 0;
+    }
+    .footer-container-items {
+        flex-direction: column;
+        justify-content: center;
+        gap: 4rem;
+    }
+    .footer-block1 {
+        text-align: justify;
+        justify-content: center;
+    }
+    .footer-block2 {
+        justify-content: flex-start;
+        padding-left: 0;
+    }
+    .footer-block3 {
+        justify-content: center;
+    }
+    .contact-heading {
+        text-align: center;
+    }
+    .contact-page-container{
+        margin-left: 4rem;
+    }
+    .about-container{
+        padding-left: 4rem;
+        padding-right: 4rem;
+    }
+    .about-founder {
+        flex-direction: column-reverse;
+        justify-content: center;
+        text-align: center;
+        gap: 20px;
+    }
+    .about-founder-heading {
+        text-align: center;
+    }
+    .founder-img-container img {
+        width: 100%;
+        max-width: 400px;
+        height: auto;
+    }
+    .team-card-container {
+        flex-direction: column;
+        justify-content: center;
+        flex-wrap:wrap;
+        align-content: center;
+    }
+    .team-card {
+        width: auto;
+    }
+}
+
+
+
+  
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
